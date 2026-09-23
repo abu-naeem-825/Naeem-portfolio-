@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MD ABU NAEEM | TESOL & ICT Portfolio</title>
+
+<meta name="description"
+content="Academic, professional and ICT portfolio of MD ABU NAEEM, Master's student in TESOL at the Institute of Education and Research, University of Dhaka.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --navy:#073b73;
+    --blue:#1268b3;
+    --cyan:#12b8c9;
+    --green:#16a085;
+    --light:#f4f8fc;
+    --white:#ffffff;
+    --dark:#172033;
+    --text:#4b5563;
+    --border:#dce6f0;
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:0 25px;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid var(--border);
+}
+
+.nav{
+    max-width:1150px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+    color:var(--navy);
+}
+
+.logo span{
+    color:var(--cyan);
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+    list-style:none;
+}
+
+.nav-links a{
+    font-size:14px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:var(--blue);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    padding:120px 25px 70px;
+    color:white;
+    background:
+    linear-gradient(135deg,#052e5c,#075ba8 65%,#0b7896);
+}
+
+.hero-inner{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.profile-photo{
+    width:230px;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid #7ee8f2;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    background:white;
+}
+
+.hero-small{
+    color:#8ff3df;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,75px);
+    line-height:1.05;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    color:#55e9e4;
+}
+
+.hero h2{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:750px;
+    font-size:17px;
+    opacity:.94;
+}
+
+.hero-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:700;
+    display:inline-block;
+}
+
+.btn-white{
+    background:white;
+    color:var(--navy);
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:var(--navy);
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title h2{
+    color:var(--dark);
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+.title p{
+    color:#64748b;
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1.6fr;
+    gap:30px;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    border:1px solid var(--border);
+}
+
+.about-photo{
+    width:170px;
+    height:200px;
+    display:block;
+    object-fit:cover;
+    margin:0 auto 20px;
+    border-radius:15px;
+}
+
+.box h3{
+    color:var(--navy);
+    margin-bottom:12px;
+}
+
+.box p{
+    margin-bottom:12px;
+}
+
+/* ================= VISION ================= */
+
+.vision{
+    background:#eaf5ff;
+}
+
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.vision-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+}
+
+.vision-card h3{
+    color:var(--navy);
+    margin-bottom:12px;
+}
+
+/* ================= EDUCATION ================= */
+
+.timeline{
+    max-width:850px;
+    margin:auto;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:25px;
+    padding-left:35px;
+    border-left:3px solid var(--cyan);
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-9px;
+    top:5px;
+    width:13px;
+    height:13px;
+    background:var(--cyan);
+    border-radius:50%;
+}
+
+.timeline-item h3{
+    color:var(--navy);
+}
+
+/* ================= CARDS ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:16px;
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:8px;
+}
+
+.icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience{
+    border-left:5px solid var(--cyan);
+}
+
+.experience h3{
+    color:var(--navy);
+}
+
+.role{
+    color:var(--blue);
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.skill{
+    margin-bottom:18px;
+}
+
+.skill-name{
+    display:flex;
+    justify-content:space-between;
+    font-weight:600;
+    color:var(--dark);
+}
+
+.bar{
+    height:9px;
+    background:#e2e8f0;
+    border-radius:20px;
+    margin-top:6px;
+}
+
+.progress{
+    height:100%;
+    border-radius:20px;
+    background:linear-gradient(90deg,var(--blue),var(--cyan));
+}
+
+/* ================= TOOLS ================= */
+
+.tools{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.tool{
+    background:white;
+    padding:10px 18px;
+    border-radius:30px;
+    border:1px solid var(--border);
+    font-weight:600;
+    color:var(--navy);
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+/* ================= RESEARCH ================= */
+
+.research{
+    margin-bottom:20px;
+}
+
+.tag{
+    display:inline-block;
+    background:#e7f8f6;
+    color:#087f6b;
+    padding:4px 11px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    margin:4px 2px;
+}
+
+/* ================= TABLE ================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:var(--shadow);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+th,td{
+    padding:15px;
+    border-bottom:1px solid var(--border);
+    text-align:left;
+}
+
+th{
+    background:var(--navy);
+    color:white;
+}
+
+/* ================= LANGUAGES ================= */
+
+.language{
+    text-align:center;
+}
+
+/* ================= REFLECTION ================= */
+
+.reflection{
+    background:linear-gradient(135deg,#073b73,#0876b5);
+    color:white;
+    text-align:center;
+}
+
+.reflection h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.reflection p{
+    max-width:850px;
+    margin:auto;
+    font-size:17px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    max-width:750px;
+    margin:auto;
+}
+
+.contact-row{
+    display:flex;
+    margin-bottom:16px;
+}
+
+.contact-row strong{
+    width:140px;
+    color:var(--navy);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0b1d33;
+    color:#cbd5e1;
+    text-align:center;
+    padding:30px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-inner{
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:25px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .about-grid,
+    .two-column,
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-row{
+        display:block;
+    }
+
+    .contact-row strong{
+        display:block;
+        width:auto;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+<div class="nav">
+
+    <div class="logo">
+        MD ABU <span>NAEEM</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+
+<div class="hero-inner">
+
+    <!-- YOUR PHOTO -->
+    <img
+        src="profile.jpg"
+        alt="MD ABU NAEEM"
+        class="profile-photo"
+    >
+
+    <div>
+
+        <div class="hero-small">
+            LEARNING • TEACHING • RESEARCH • TECHNOLOGY
+        </div>
+
+        <h1>
+            MD ABU <span>NAEEM</span>
+        </h1>
+
+        <h2>
+            Master's Student in TESOL
+        </h2>
+
+        <p>
+            Institute of Education and Research (IER),
+            University of Dhaka
+        </p>
+
+        <p>
+            Graduate in Language Education | English Language Teaching |
+            Educational Technology | Research
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#about" class="btn btn-white">
+                Explore My Portfolio
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="title">
+    <h2>About Me</h2>
+    <p>My academic identity and professional journey</p>
+</div>
+
+<div class="about-grid">
+
+    <div class="box">
+
+        <img src="profile.jpg"
+             alt="MD ABU NAEEM"
+             class="about-photo">
+
+        <h3>MD ABU NAEEM</h3>
+
+        <p>
+            Master's Student in TESOL
+        </p>
+
+        <p>
+            Institute of Education and Research,
+            University of Dhaka
+        </p>
+
+        <p>
+            Academic Background:
+            <strong>Language Education</strong>
+        </p>
+
+    </div>
+
+
+    <div class="box">
+
+        <p>
+            I am <strong>MD ABU NAEEM</strong>, currently pursuing a
+            Master's degree in <strong>TESOL</strong> at the
+            Institute of Education and Research (IER),
+            University of Dhaka.
+        </p>
+
+        <p>
+            I completed my graduation in
+            <strong>Language Education</strong>. My academic journey
+            has developed my interest in English language teaching,
+            educational assessment, curriculum, ICT and educational research.
+        </p>
+
+        <p>
+            I have practical experience as an
+            <strong>examination invigilator, script evaluator,
+            intern teacher and private tutor</strong>.
+        </p>
+
+        <p>
+            I am particularly interested in integrating
+            <strong>ICT and emerging technologies into English
+            language teaching</strong> to create engaging,
+            inclusive and learner-centered learning environments.
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= VISION ================= -->
+
+<section class="vision">
+
+<div class="container">
+
+<div class="title">
+    <h2>Vision & Mission</h2>
+</div>
+
+<div class="two-column">
+
+    <div class="vision-card">
+
+        <h3>🌍 My Vision</h3>
+
+        <p>
+            To become a competent, reflective and
+            technology-integrated English language educator
+            who combines effective pedagogy, educational
+            technology and research to create meaningful,
+            inclusive and learner-centered language
+            learning experiences.
+        </p>
+
+    </div>
+
+
+    <div class="vision-card">
+
+        <h3>🎯 My Mission</h3>
+
+        <p>
+            My mission is to continuously develop my knowledge
+            of TESOL, strengthen my teaching and assessment
+            skills, use ICT and emerging technologies responsibly,
+            conduct meaningful educational research, and
+            contribute to improving English language education
+            through innovative and evidence-informed practices.
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<div class="container">
+
+<div class="title">
+    <h2>Academic Journey</h2>
+    <p>My educational background</p>
+</div>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+
+        <h3>Master's in TESOL — Currently Studying</h3>
+
+        <p>
+            <strong>
+            Institute of Education and Research (IER),
+            University of Dhaka
+            </strong>
+        </p>
+
+        <p>
+            Focus areas include TESOL, ELT, SLA, assessment,
+            curriculum, ICT and educational research.
+        </p>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+        <h3>Graduation in Language Education</h3>
+
+        <p>
+            <strong>
+            Institute of Education and Research,
+            University of Dhaka
+            </strong>
+        </p>
+
+        <p>
+            Completed undergraduate study in Language Education.
+        </p>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+        <h3>HSC — 2020</h3>
+
+        <p>
+            <strong>Govt. Sayed Hatem Ali College</strong>
+        </p>
+
+        <p>
+            Group: Business Studies
+        </p>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+        <h3>SSC — 2018</h3>
+
+        <p>
+            <strong>Taslima Memorial Academy</strong>
+        </p>
+
+        <p>
+            Group: Business Studies
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="vision">
+
+<div class="container">
+
+<div class="title">
+
+    <h2>Professional Experience</h2>
+
+    <p>
+        My practical experience in teaching and assessment
+    </p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card experience">
+
+    <div class="icon">📝</div>
+
+    <h3>ALOHA Bangladesh</h3>
+
+    <div class="role">
+        Examination Invigilator
+    </div>
+
+    <ul>
+        <li>Supervised examination sessions.</li>
+        <li>Maintained examination discipline.</li>
+        <li>Ensured an organized assessment environment.</li>
+        <li>Developed observation and communication skills.</li>
+    </ul>
+
+</div>
+
+
+<div class="card experience">
+
+    <div class="icon">📋</div>
+
+    <h3>Udvas</h3>
+
+    <div class="role">
+        Script Evaluator
+    </div>
+
+    <ul>
+        <li>Evaluated students' examination scripts.</li>
+        <li>Applied assessment criteria.</li>
+        <li>Evaluated model test scripts.</li>
+        <li>Developed assessment experience.</li>
+    </ul>
+
+</div>
+
+
+<div class="card experience">
+
+    <div class="icon">👨‍🏫</div>
+
+    <h3>University Laboratory School & College, DU</h3>
+
+    <div class="role">
+        Intern Teacher
+    </div>
+
+    <ul>
+        <li>Participated in classroom teaching.</li>
+        <li>Planned learning activities.</li>
+        <li>Observed learner behavior.</li>
+        <li>Developed classroom-management skills.</li>
+    </ul>
+
+</div>
+
+
+<div class="card experience">
+
+    <div class="icon">📚</div>
+
+    <h3>Private Tutoring</h3>
+
+    <div class="role">
+        Private Tutor
+    </div>
+
+    <ul>
+        <li>Provided English language instruction.</li>
+        <li>Adapted lessons to learners' needs.</li>
+        <li>Supported grammar and speaking development.</li>
+        <li>Developed learner-support skills.</li>
+    </ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ICT SKILLS ================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="title">
+
+    <h2>ICT & Digital Skills</h2>
+
+    <p>
+        Technology skills supporting my academic and teaching work
+    </p>
+
+</div>
+
+
+<div class="skills-grid">
+
+<div class="box">
+
+    <div class="skill">
+
+        <div class="skill-name">
+            <span>MS Word</span>
+            <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+            <div class="progress" style="width:90%"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-name">
+            <span>PowerPoint</span>
+            <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+            <div class="progress" style="width:88%"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-name">
+            <span>Google Forms</span>
+            <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+            <div class="progress" style="width:85%"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-name">
+            <span>Canva</span>
+            <span>Advanced</span>
+        </div>
+
+        <div class="bar">
+            <div class="progress" style="width:85%"></div>
+        </div>
+
+    </div>
+
+
+    <div class="skill">
+
+        <div class="skill-name">
+            <span>AI Tools</span>
+            <span>Intermediate</span>
+        </div>
+
+        <div class="bar">
+            <div class="progress" style="width:70%"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="box">
+
+    <h3>🛠️ Digital Tools I Use</h3>
+
+    <div class="tools">
+
+        <span class="tool">MS Word</span>
+        <span class="tool">PowerPoint</span>
+        <span class="tool">Google Forms</span>
+        <span class="tool">Canva</span>
+        <span class="tool">AI Tools</span>
+        <span class="tool">Google Drive</span>
+        <span class="tool">Online Assessment</span>
+        <span class="tool">Digital Presentation</span>
+        <span class="tool">Educational Technology</span>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TEACHING SKILLS ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="title">
+
+    <h2>Teaching & Academic Competencies</h2>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+    <div class="icon">📖</div>
+    <h3>English Language Teaching</h3>
+    <p>
+        Knowledge of English language teaching,
+        pedagogy and learner-centered instruction.
+    </p>
+</div>
+
+
+<div class="card">
+    <div class="icon">👨‍🏫</div>
+    <h3>Classroom Teaching</h3>
+    <p>
+        Practical experience in classroom teaching,
+        learner interaction and classroom activities.
+    </p>
+</div>
+
+
+<div class="card">
+    <div class="icon">📝</div>
+    <h3>Assessment</h3>
+    <p>
+        Experience in examination invigilation,
+        script evaluation and assessment.
+    </p>
+</div>
+
+
+<div class="card">
+    <div class="icon">🔬</div>
+    <h3>Educational Research</h3>
+    <p>
+        Experience with research questions,
+        questionnaires and educational research.
+    </p>
+</div>
+
+
+<div class="card">
+    <div class="icon">💡</div>
+    <h3>Critical Thinking</h3>
+    <p>
+        Ability to analyze educational issues
+        and explore evidence-based solutions.
+    </p>
+</div>
+
+
+<div class="card">
+    <div class="icon">🤝</div>
+    <h3>Collaboration</h3>
+    <p>
+        Ability to work effectively in academic
+        and professional teams.
+    </p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= RESEARCH ================= -->
+
+<section id="research" class="vision">
+
+<div class="container">
+
+<div class="title">
+
+    <h2>Research & Academic Projects</h2>
+
+    <p>Selected areas of my academic research</p>
+
+</div>
+
+
+<div class="card research">
+
+<h3>
+01. Assignment Submission Behavior among University Students
+</h3>
+
+<p>
+A research project examining assignment submission behavior
+and factors associated with different submission patterns.
+</p>
+
+<br>
+
+<span class="tag">Assignment Submission</span>
+<span class="tag">Time Management</span>
+<span class="tag">Procrastination</span>
+<span class=
